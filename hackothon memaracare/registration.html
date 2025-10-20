@@ -1,0 +1,155 @@
+
+<!-- saved from url=(0046)file:///C:/Users/surya/Desktop/html/reddy.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>registration.. form</title>
+<style>
+  /* Optional: Hide the print button during print */
+  @media print {
+      #printButton {
+          display: none;
+      }
+  }
+  form{
+    margin-left: 400px;
+    margin-right: 400px;
+    background-color:black;
+    color: white;
+    border: solid 2px white;
+    border-radius: 10%;
+    padding: 30px;
+  }
+  body{
+    background-color:grey;
+    color: white;
+  }
+</style>
+<link rel="style sheet" href="s.css">
+</head>
+<body style="background-image:url(&#39;download.jpg&#39;);background-repeat: no-repeat;background-attachment: fixed;
+  background-size: cover;">
+
+
+<form id="printArea">
+  <fieldset> <legend style="align-items: center; justify-content: center;"><h1>registration form</h1></legend>
+<h3>valid only current address</h3>
+<table style="align:center;border:20;text-color:green; ">
+
+<tr>
+<td>
+USERNAME:
+</td>
+<td>
+<input type="text" name="" placeholder="username">
+</td>
+</tr>
+<tr>
+<td>
+PHONE NUMBER:
+</td>
+<td>
+<input type="phone" placeholder="91**********">
+</td>
+</tr>
+<tr>
+<td>
+EMAIL ID:
+</td>
+<td>
+<input type="eamil" placeholder="mail id">
+</td>
+</tr>
+<tr>
+<td>
+password:
+</td>
+<td>
+<input type="password" placeholder="security code">
+</td>
+</tr>
+<tr>
+<td>
+GENDER:
+</td>
+<td>
+<input type="radio" name="gender">male
+<input type="radio" name="gender">female
+<input type="radio" name="gender">none
+</td>
+</tr>
+<tr>
+<td>
+DATE OF BIRTH:
+</td>
+<td>
+<input type="DATE">
+</td>
+</tr>
+<tr>
+<td>
+HOBBIES:
+</td>
+<td>
+<input type="CHECKBOX" singing="">singing
+<input type="CHECKBOX" battind="">batting
+<input type="CHECKBOX" eating="">eating
+</td>
+</tr>
+<tr>
+<td>
+EDUCATION QUALIFICATION:
+</td>
+<td>
+<select>
+<option>10+2</option>
+<option>graduation</option>
+<option> post-graduation</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+time:
+</td>
+<td>
+<input type="time">
+<select>
+<option>PM</option>
+<option>AM</option>
+</select>
+</td>
+</tr>
+<tr>
+<td>
+ADDRESS:
+</td>
+<td>
+<textarea placeholder="address" row="4" col="7" style="width: 183px; height: 105px;"></textarea>
+</td>
+</tr>
+<tr>
+<td>
+ 
+<input type="reset" value="reset" placeholder="reset">
+</td>
+</tr>
+</tbody></table>
+
+
+click on the mail image to send mail to me
+<a href="mailto:suryakiranlakkireddy@gmail.com"><img src="file:///C:/Users/surya/Desktop/mail.png" width="200" height="200"></a>
+<button id="printButton" onclick="printSection()">Print the printable section</button>
+
+<script>
+  function printSection() {
+      var printContents = document.getElementById('printArea').innerHTML;
+      var originalContents = document.body.innerHTML;
+
+      document.body.innerHTML = printContents;
+      window.print();
+      document.body.innerHTML = originalContents;
+  }
+</script>
+</fieldset>
+</form>
+
+</body></html>
